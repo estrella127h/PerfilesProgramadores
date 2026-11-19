@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Axel Levano</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .perfil {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        h1 { color: #1e3a8a; }
+        h2 { color: #2563eb; }
+
+        .foto {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .datos {
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="perfil">
+
+    <img src="foto5.jpg" alt="Fotografía de Axel" class="foto">
+
+    <h1>Levano Suarez, Axel Jesus</h1>
+
+    <h2>Programador del sistema</h2>
+
+    <div class="datos">
+
+        <p><strong>Carrera:</strong> Ingeniería de Software</p>
+
+        <p><strong>Edad:</strong> No especificada</p>
+
+        <p><strong>Funciones realizadas:</strong></p>
+
+        <ul>
+            <li>Participación en la exposición del proyecto.</li>
+        </ul>
+
+    </div>
+
+    <a href="index.html" class="boton">VOLVER A PROGRAMADORES</a>
+
+</div>
+
+</body>
+</html>
+
+
+
+k
