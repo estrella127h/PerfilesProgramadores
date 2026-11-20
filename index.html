@@ -1,4 +1,3 @@
-git status
 
 <!DOCTYPE html>
 <html lang="es">
@@ -8,89 +7,147 @@ git status
     <title>Programadores del Sistema</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #eef2f7;
+            margin: 0;
+            padding: 30px 20px;
             text-align: center;
-            padding: 30px;
+        }
+
+        header {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 1000px;
+            margin: auto auto 30px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        .logo {
+            width: 115px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
         }
 
         h1 {
             color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+
+        .subtitulo {
+            color: #475569;
         }
 
         .contenedor {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 22px;
         }
 
         .tarjeta {
             background: white;
-            width: 200px;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 12px #0002;
         }
 
-        .tarjeta img {
+        .foto {
             width: 140px;
             height: 140px;
             border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #dbeafe;
+        }
+
+        h3 {
+            color: #1e3a8a;
         }
 
         .boton {
             display: inline-block;
             background: #2563eb;
             color: white;
-            padding: 12px 20px;
-            text-decoration: none;
+            padding: 11px 18px;
             border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #64748b;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+
+    <img class="logo"
+         src="https://commons.wikimedia.org/wiki/Special:FilePath/UPN_-_Universidad_Privada_del_Norte.png"
+         alt="Logo Universidad Privada del Norte">
+
     <h1>PROGRAMADORES DEL SISTEMA</h1>
-    <p>Sistema de Gestión de Máquina Expendedora</p>
 
-    <div class="contenedor">
+    <p class="subtitulo">
+        Sistema de Gestión de Máquina Expendedora
+    </p>
 
-        <div class="tarjeta">
-            <img src="foto1.jpg">
-            <h3>Programador 1</h3>
-            <a href="perfil1.html" class="boton">VER PERFIL</a>
-        </div>
+    <p><strong>Universidad Privada del Norte (UPN)</strong></p>
 
-        <div class="tarjeta">
-            <img src="foto2.jpg">
-            <h3>Programador 2</h3>
-            <a href="perfil2.html" class="boton">VER PERFIL</a>
-        </div>
+</header>
 
-        <div class="tarjeta">
-            <img src="foto3.jpg">
-            <h3>Programador 3</h3>
-            <a href="perfil3.html" class="boton">VER PERFIL</a>
-        </div>
+<div class="contenedor">
 
-        <div class="tarjeta">
-            <img src="foto4.jpg">
-            <h3>Programador 4</h3>
-            <a href="perfil4.html" class="boton">VER PERFIL</a>
-        </div>
-
-        <div class="tarjeta">
-            <img src="foto5.jpg">
-            <h3>Programador 5</h3>
-            <a href="perfil5.html" class="boton">VER PERFIL</a>
-        </div>
-
+    <div class="tarjeta">
+        <img src="foto1.jpg" class="foto" alt="Programadora 1">
+        <h3>Programador 1</h3>
+        <a href="perfil1.html" class="boton">VER PERFIL</a>
     </div>
+
+    <div class="tarjeta">
+        <img src="foto2.jpg" class="foto" alt="Programador 2">
+        <h3>Programador 2</h3>
+        <a href="perfil2.html" class="boton">VER PERFIL</a>
+    </div>
+
+    <div class="tarjeta">
+        <img src="foto3.jpg" class="foto" alt="Programador 3">
+        <h3>Programador 3</h3>
+        <a href="perfil3.html" class="boton">VER PERFIL</a>
+    </div>
+
+    <div class="tarjeta">
+        <img src="foto4.jpg" class="foto" alt="Programador 4">
+        <h3>Programador 4</h3>
+        <a href="perfil4.html" class="boton">VER PERFIL</a>
+    </div>
+
+    <div class="tarjeta">
+        <img src="foto5.jpg" class="foto" alt="Programador 5">
+        <h3>Programador 5</h3>
+        <a href="perfil5.html" class="boton">VER PERFIL</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>Sistema de Gestión de Máquina Expendedora</p>
+    <p>Universidad Privada del Norte - UPN</p>
+</footer>
 
 </body>
 </html>
-
